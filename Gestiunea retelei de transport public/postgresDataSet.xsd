@@ -120,7 +120,8 @@
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        "public".angajati.idangajat, "public".angajati.cnp, "public".angajati.nume, "public".angajati.prenume, "public".angajati.sex
 FROM            "public".angajati, "public".controlori
-WHERE        "public".angajati.idangajat = "public".controlori.idangajat AND (angajati.idangajat = controlori.idangajat)</CommandText>
+WHERE        "public".angajati.idangajat = "public".controlori.idangajat AND (angajati.idangajat = controlori.idangajat)
+</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -233,8 +234,8 @@ WHERE        "public".angajati.idangajat = "public".controlori.idangajat AND (an
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="controlori_activitatecontrolori" msdata:parent="controlori" msdata:child="activitatecontrolori" msdata:parentkey="idcontrolor" msdata:childkey="idcontrolor" msprop:Generator_UserChildTable="activitatecontrolori" msprop:Generator_ChildPropName="GetactivitatecontroloriRows" msprop:Generator_ParentPropName="controloriRow" msprop:Generator_UserRelationName="controlori_activitatecontrolori" msprop:Generator_RelationVarName="relationcontrolori_activitatecontrolori" msprop:Generator_UserParentTable="controlori" />
-      <msdata:Relationship name="angajati_controlori" msdata:parent="angajati" msdata:child="controlori" msdata:parentkey="idangajat" msdata:childkey="idangajat" msprop:Generator_UserChildTable="controlori" msprop:Generator_ChildPropName="GetcontroloriRows" msprop:Generator_UserParentTable="angajati" msprop:Generator_UserRelationName="angajati_controlori" msprop:Generator_RelationVarName="relationangajati_controlori" msprop:Generator_ParentPropName="angajatiRow" />
+      <msdata:Relationship name="controlori_activitatecontrolori" msdata:parent="controlori" msdata:child="activitatecontrolori" msdata:parentkey="idcontrolor" msdata:childkey="idcontrolor" msprop:Generator_UserChildTable="activitatecontrolori" msprop:Generator_ChildPropName="GetactivitatecontroloriRows" msprop:Generator_UserParentTable="controlori" msprop:Generator_UserRelationName="controlori_activitatecontrolori" msprop:Generator_RelationVarName="relationcontrolori_activitatecontrolori" msprop:Generator_ParentPropName="controloriRow" />
+      <msdata:Relationship name="angajati_controlori" msdata:parent="angajati" msdata:child="controlori" msdata:parentkey="idangajat" msdata:childkey="idangajat" msprop:Generator_UserChildTable="controlori" msprop:Generator_ChildPropName="GetcontroloriRows" msprop:Generator_ParentPropName="angajatiRow" msprop:Generator_UserRelationName="angajati_controlori" msprop:Generator_RelationVarName="relationangajati_controlori" msprop:Generator_UserParentTable="angajati" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

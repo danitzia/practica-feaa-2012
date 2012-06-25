@@ -34,7 +34,7 @@ namespace Gestiunea_retelei_de_transport_public
             // TODO: This line of code loads data into the 'postgresDataSet.controlori' table. You can move, or remove it, as needed.
             this.controloriTableAdapter.Fill(this.postgresDataSet.controlori);
             // TODO: This line of code loads data into the 'postgresDataSet.angajati' table. You can move, or remove it, as needed.
-            this.angajatiTableAdapter.Fill(this.postgresDataSet.angajati);
+            //this.angajatiTableAdapter.Fill(this.postgresDataSet.angajati);
             // TODO: This line of code loads data into the 'postgresDataSet.controlori' table. You can move, or remove it, as needed.
             this.controloriTableAdapter.Fill(this.postgresDataSet.controlori);
             // TODO: This line of code loads data into the 'postgresDataSet.controlori' table. You can move, or remove it, as needed.

@@ -18,8 +18,19 @@ namespace Gestiunea_retelei_de_transport_public
 
         private void FormRaportAngajati_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'DataSetAngajati.DataTable1' table. You can move, or remove it, as needed.
-            this.DataTable1TableAdapter.Fill(this.DataSetAngajati.DataTable1);
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
+
+        private void cmbRaportAngajati_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.DataTable1TableAdapter.Fill(this.DataSetAngajati.DataTable1, cmbRaportAngajati.SelectedItem.ToString());
 
             this.reportViewer1.RefreshReport();
         }

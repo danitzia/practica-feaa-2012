@@ -2507,7 +2507,8 @@ namespace Gestiunea_retelei_de_transport_public.postgresDataSetTableAdapters {
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        ""public"".angajati.idangajat, ""public"".angajati.cnp, ""public"".angajati.nume, ""public"".angajati.prenume, ""public"".angajati.sex
 FROM            ""public"".angajati, ""public"".controlori
-WHERE        ""public"".angajati.idangajat = ""public"".controlori.idangajat AND (angajati.idangajat = controlori.idangajat)";
+WHERE        ""public"".angajati.idangajat = ""public"".controlori.idangajat AND (angajati.idangajat = controlori.idangajat)
+";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

@@ -54,6 +54,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetAngajati.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetCategoriiAngajati.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCategoriiAngajati.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetStatiiTraseu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetStatiiTraseu.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetTotalAmenzi.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -76,6 +86,18 @@
     </Compile>
     <Compile Include="FormRaportAngajati.Designer.cs">
       <DependentUpon>FormRaportAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaportCategoriiAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaportCategoriiAngajati.Designer.cs">
+      <DependentUpon>FormRaportCategoriiAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaportStatiiTraseu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaportStatiiTraseu.Designer.cs">
+      <DependentUpon>FormRaportStatiiTraseu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRaportTotalAmenzi.cs">
       <SubType>Form</SubType>
@@ -103,9 +125,17 @@
     <EmbeddedResource Include="FormRaportAngajati.resx">
       <DependentUpon>FormRaportAngajati.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRaportCategoriiAngajati.resx">
+      <DependentUpon>FormRaportCategoriiAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaportStatiiTraseu.resx">
+      <DependentUpon>FormRaportStatiiTraseu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRaportTotalAmenzi.resx">
       <DependentUpon>FormRaportTotalAmenzi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MachetaCategoriiAngajati.rdlc" />
+    <EmbeddedResource Include="MachetaStatiiTraseu.rdlc" />
     <EmbeddedResource Include="MachetTotalAmenzi.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +158,28 @@
     </None>
     <None Include="DataSetAngajati.xss">
       <DependentUpon>DataSetAngajati.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCategoriiAngajati.xsc">
+      <DependentUpon>DataSetCategoriiAngajati.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCategoriiAngajati.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCategoriiAngajati.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCategoriiAngajati.xss">
+      <DependentUpon>DataSetCategoriiAngajati.xsd</DependentUpon>
+    </None>
+    <None Include="DatasetStatiiTraseu.xsc">
+      <DependentUpon>DatasetStatiiTraseu.xsd</DependentUpon>
+    </None>
+    <None Include="DatasetStatiiTraseu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetStatiiTraseu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatasetStatiiTraseu.xss">
+      <DependentUpon>DatasetStatiiTraseu.xsd</DependentUpon>
     </None>
     <None Include="DataSetTotalAmenzi.xsc">
       <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
