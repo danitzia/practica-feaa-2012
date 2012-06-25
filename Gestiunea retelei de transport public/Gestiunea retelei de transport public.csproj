@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F1A1BE3-FB28-42F8-9BF5-8E8BB48E7B41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestiunea_retelei_de_transport_public</RootNamespace>
+    <AssemblyName>Gestiunea retelei de transport public</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetAngajati.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAngajati.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTotalAmenzi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivitateControlori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivitateControlori.Designer.cs">
+      <DependentUpon>FormActivitateControlori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDel.Designer.cs">
+      <DependentUpon>FormAddDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaportAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaportAngajati.Designer.cs">
+      <DependentUpon>FormRaportAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaportTotalAmenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaportTotalAmenzi.Designer.cs">
+      <DependentUpon>FormRaportTotalAmenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="postgresDataSet.cs">
+      <DependentUpon>postgresDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="postgresDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>postgresDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormActivitateControlori.resx">
+      <DependentUpon>FormActivitateControlori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDel.resx">
+      <DependentUpon>FormAddDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaportAngajati.resx">
+      <DependentUpon>FormRaportAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaportTotalAmenzi.resx">
+      <DependentUpon>FormRaportTotalAmenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachetTotalAmenzi.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportAngajati.rdlc" />
+    <None Include="app.config" />
+    <None Include="DataSetAngajati.xsc">
+      <DependentUpon>DataSetAngajati.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAngajati.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAngajati.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAngajati.xss">
+      <DependentUpon>DataSetAngajati.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTotalAmenzi.xsc">
+      <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTotalAmenzi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTotalAmenzi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTotalAmenzi.xss">
+      <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
+    </None>
+    <None Include="postgresDataSet.xsc">
+      <DependentUpon>postgresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="postgresDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>postgresDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="postgresDataSet.xss">
+      <DependentUpon>postgresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
