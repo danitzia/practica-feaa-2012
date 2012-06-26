@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetOrarTrasee" targetNamespace="http://tempuri.org/DataSetOrarTrasee.xsd" xmlns:mstns="http://tempuri.org/DataSetOrarTrasee.xsd" xmlns="http://tempuri.org/DataSetOrarTrasee.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="postgresConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="postgresConnectionString (Settings)" PropertyReference="ApplicationSettings.Gestiunea_retelei_de_transport_public.Properties.Settings.GlobalReference.Default.postgresConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableA1TableAdapter" GeneratorDataComponentClassName="DataTableA1TableAdapter" Name="DataTableA1" UserDataComponentName="DataTableA1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="postgresConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        "public".mijtransppeoraretrasee.idorartraseu, "public".mijtransppeoraretrasee.nrinmat, "public".mijtransppeoraretrasee.datatraseu, "public".oraretraseu.idtraseu, 
+                         "public".oraretraseu.idstatieplecare, "public".oraretraseu.oraplecare, "public".statiiletraseului.idstatie, "public".statiiletraseului.nrstatie, 
+                         "public".statii.denstatie
+FROM            "public".mijtransppeoraretrasee, "public".oraretraseu, "public".statiiletraseului, "public".statii
+WHERE        "public".mijtransppeoraretrasee.idorartraseu = "public".oraretraseu.idorartraseu AND "public".oraretraseu.idtraseu = "public".statiiletraseului.idtraseu AND 
+                         "public".statiiletraseului.idstatie = "public".statii.idstatie AND (statiiletraseului.idstatie = oraretraseu.idstatieplecare)
+ORDER BY mijtransppeoraretrasee.datatraseu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idorartraseu" DataSetColumn="idorartraseu" />
+              <Mapping SourceColumn="nrinmat" DataSetColumn="nrinmat" />
+              <Mapping SourceColumn="datatraseu" DataSetColumn="datatraseu" />
+              <Mapping SourceColumn="idtraseu" DataSetColumn="idtraseu" />
+              <Mapping SourceColumn="idstatieplecare" DataSetColumn="idstatieplecare" />
+              <Mapping SourceColumn="oraplecare" DataSetColumn="oraplecare" />
+              <Mapping SourceColumn="idstatie" DataSetColumn="idstatie" />
+              <Mapping SourceColumn="nrstatie" DataSetColumn="nrstatie" />
+              <Mapping SourceColumn="denstatie" DataSetColumn="denstatie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetOrarTrasee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetOrarTrasee" msprop:Generator_UserDSName="DataSetOrarTrasee">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableA1" msprop:Generator_TableClassName="DataTableA1DataTable" msprop:Generator_TableVarName="tableDataTableA1" msprop:Generator_TablePropName="DataTableA1" msprop:Generator_RowDeletingName="DataTableA1RowDeleting" msprop:Generator_UserTableName="DataTableA1" msprop:Generator_RowChangingName="DataTableA1RowChanging" msprop:Generator_RowEvHandlerName="DataTableA1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableA1RowDeleted" msprop:Generator_RowEvArgName="DataTableA1RowChangeEvent" msprop:Generator_RowChangedName="DataTableA1RowChanged" msprop:Generator_RowClassName="DataTableA1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idorartraseu" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidorartraseu" msprop:Generator_ColumnPropNameInRow="idorartraseu" msprop:Generator_ColumnPropNameInTable="idorartraseuColumn" msprop:Generator_UserColumnName="idorartraseu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nrinmat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnnrinmat" msprop:Generator_ColumnPropNameInRow="nrinmat" msprop:Generator_ColumnPropNameInTable="nrinmatColumn" msprop:Generator_UserColumnName="nrinmat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datatraseu" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndatatraseu" msprop:Generator_ColumnPropNameInRow="datatraseu" msprop:Generator_ColumnPropNameInTable="datatraseuColumn" msprop:Generator_UserColumnName="datatraseu" type="xs:dateTime" />
+              <xs:element name="idtraseu" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidtraseu" msprop:Generator_ColumnPropNameInRow="idtraseu" msprop:Generator_ColumnPropNameInTable="idtraseuColumn" msprop:Generator_UserColumnName="idtraseu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idstatieplecare" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidstatieplecare" msprop:Generator_ColumnPropNameInRow="idstatieplecare" msprop:Generator_ColumnPropNameInTable="idstatieplecareColumn" msprop:Generator_UserColumnName="idstatieplecare">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="oraplecare" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnoraplecare" msprop:Generator_ColumnPropNameInRow="oraplecare" msprop:Generator_ColumnPropNameInTable="oraplecareColumn" msprop:Generator_UserColumnName="oraplecare" type="xs:duration" />
+              <xs:element name="idstatie" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidstatie" msprop:Generator_ColumnPropNameInRow="idstatie" msprop:Generator_ColumnPropNameInTable="idstatieColumn" msprop:Generator_UserColumnName="idstatie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nrstatie" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnnrstatie" msprop:Generator_ColumnPropNameInRow="nrstatie" msprop:Generator_ColumnPropNameInTable="nrstatieColumn" msprop:Generator_UserColumnName="nrstatie" type="xs:decimal" />
+              <xs:element name="denstatie" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndenstatie" msprop:Generator_ColumnPropNameInRow="denstatie" msprop:Generator_ColumnPropNameInTable="denstatieColumn" msprop:Generator_UserColumnName="denstatie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTableA1" />
+      <xs:field xpath="mstns:idorartraseu" />
+      <xs:field xpath="mstns:nrinmat" />
+      <xs:field xpath="mstns:datatraseu" />
+      <xs:field xpath="mstns:idtraseu" />
+      <xs:field xpath="mstns:idstatieplecare" />
+      <xs:field xpath="mstns:oraplecare" />
+      <xs:field xpath="mstns:idstatie" />
+      <xs:field xpath="mstns:nrstatie" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
