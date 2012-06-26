@@ -106,6 +106,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCategoriiAngajati.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetControloriSimplu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetControloriSimplu.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetFormCategorii.cs">
       <DependentUpon>DataSetFormCategorii.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -115,10 +120,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetFormCategorii.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dataSetFormMijTransSimplu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataSetFormMijTransSimplu.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetSoferiMijlocDeTransport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetSoferiMijlocDeTransport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSoferiVatmani.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSoferiVatmani.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatasetStatiiTraseu.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -130,11 +145,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetTraseeSimplu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTraseeSimplu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDelSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDelSimplu.Designer.cs">
+      <DependentUpon>FormAddDelSimplu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCategorieSoferi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCategorieSoferi.Designer.cs">
       <DependentUpon>FormCategorieSoferi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaportAngajatiSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaportAngajatiSimplu.Designer.cs">
+      <DependentUpon>FormRaportAngajatiSimplu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRaportMijTransSimplu.cs">
       <SubType>Form</SubType>
@@ -166,18 +198,6 @@
     <Compile Include="FormActivitateControlori.Designer.cs">
       <DependentUpon>FormActivitateControlori.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddDel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAddDel.Designer.cs">
-      <DependentUpon>FormAddDel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormRaportAngajati.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRaportAngajati.Designer.cs">
-      <DependentUpon>FormRaportAngajati.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormRaportCategoriiAngajati.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +222,30 @@
     <Compile Include="FormRaportSoferiMijdeTransportSimplu.Designer.cs">
       <DependentUpon>FormRaportSoferiMijdeTransportSimplu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularControloriSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularControloriSimplu.Designer.cs">
+      <DependentUpon>FormularControloriSimplu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularMijTransSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularMijTransSimplu.Designer.cs">
+      <DependentUpon>FormularMijTransSimplu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularSoferiVatmaniSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularSoferiVatmaniSimplu.Designer.cs">
+      <DependentUpon>FormularSoferiVatmaniSimplu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularTraseeSimplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularTraseeSimplu.Designer.cs">
+      <DependentUpon>FormularTraseeSimplu.cs</DependentUpon>
+    </Compile>
     <Compile Include="postgresDataSet.cs">
       <DependentUpon>postgresDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -213,8 +257,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddDelSimplu.resx">
+      <DependentUpon>FormAddDelSimplu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCategorieSoferi.resx">
       <DependentUpon>FormCategorieSoferi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaportAngajatiSimplu.resx">
+      <DependentUpon>FormRaportAngajatiSimplu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRaportMijTransSimplu.resx">
       <DependentUpon>FormRaportMijTransSimplu.cs</DependentUpon>
@@ -231,12 +281,6 @@
     <EmbeddedResource Include="FormActivitateControlori.resx">
       <DependentUpon>FormActivitateControlori.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddDel.resx">
-      <DependentUpon>FormAddDel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRaportAngajati.resx">
-      <DependentUpon>FormRaportAngajati.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormRaportCategoriiAngajati.resx">
       <DependentUpon>FormRaportCategoriiAngajati.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +292,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRaportSoferiMijdeTransportSimplu.resx">
       <DependentUpon>FormRaportSoferiMijdeTransportSimplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularControloriSimplu.resx">
+      <DependentUpon>FormularControloriSimplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularMijTransSimplu.resx">
+      <DependentUpon>FormularMijTransSimplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularSoferiVatmaniSimplu.resx">
+      <DependentUpon>FormularSoferiVatmaniSimplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularTraseeSimplu.resx">
+      <DependentUpon>FormularTraseeSimplu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MachetaCategoriiAngajati.rdlc" />
     <EmbeddedResource Include="MachetaSoferiMijlocDeTransport.rdlc" />
@@ -334,6 +390,16 @@
     <None Include="DataSetCategoriiAngajati.xss">
       <DependentUpon>DataSetCategoriiAngajati.xsd</DependentUpon>
     </None>
+    <None Include="DataSetControloriSimplu.xsc">
+      <DependentUpon>DataSetControloriSimplu.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetControloriSimplu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetControloriSimplu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetControloriSimplu.xss">
+      <DependentUpon>DataSetControloriSimplu.xsd</DependentUpon>
+    </None>
     <None Include="DataSetFormCategorii.xsc">
       <DependentUpon>DataSetFormCategorii.xsd</DependentUpon>
     </None>
@@ -345,6 +411,17 @@
     <None Include="DataSetFormCategorii.xss">
       <DependentUpon>DataSetFormCategorii.xsd</DependentUpon>
     </None>
+    <None Include="dataSetFormMijTransSimplu.xsc">
+      <DependentUpon>dataSetFormMijTransSimplu.xsd</DependentUpon>
+    </None>
+    <None Include="dataSetFormMijTransSimplu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataSetFormMijTransSimplu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataSetFormMijTransSimplu.xss">
+      <DependentUpon>dataSetFormMijTransSimplu.xsd</DependentUpon>
+    </None>
     <None Include="DataSetSoferiMijlocDeTransport.xsc">
       <DependentUpon>DataSetSoferiMijlocDeTransport.xsd</DependentUpon>
     </None>
@@ -355,6 +432,17 @@
     </None>
     <None Include="DataSetSoferiMijlocDeTransport.xss">
       <DependentUpon>DataSetSoferiMijlocDeTransport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSoferiVatmani.xsc">
+      <DependentUpon>DataSetSoferiVatmani.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSoferiVatmani.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSoferiVatmani.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSoferiVatmani.xss">
+      <DependentUpon>DataSetSoferiVatmani.xsd</DependentUpon>
     </None>
     <None Include="DatasetStatiiTraseu.xsc">
       <DependentUpon>DatasetStatiiTraseu.xsd</DependentUpon>
@@ -377,6 +465,17 @@
     </None>
     <None Include="DataSetTotalAmenzi.xss">
       <DependentUpon>DataSetTotalAmenzi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTraseeSimplu.xsc">
+      <DependentUpon>DataSetTraseeSimplu.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTraseeSimplu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTraseeSimplu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetTraseeSimplu.xss">
+      <DependentUpon>DataSetTraseeSimplu.xsd</DependentUpon>
     </None>
     <None Include="postgresDataSet.xsc">
       <DependentUpon>postgresDataSet.xsd</DependentUpon>
