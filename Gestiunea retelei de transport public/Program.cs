@@ -15,7 +15,7 @@ namespace Gestiunea_retelei_de_transport_public
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSoferiMijlocDeTransport());
+            Application.Run(new Interfata());
         }
     }
 }

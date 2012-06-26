@@ -1,6 +1,6 @@
 ﻿namespace Gestiunea_retelei_de_transport_public
 {
-    partial class FormRaportAngajati
+    partial class FormRaportAngajatiSimplu
     {
         /// <summary>
         /// Required designer variable.
