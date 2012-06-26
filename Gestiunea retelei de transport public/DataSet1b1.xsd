@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1b1" targetNamespace="http://tempuri.org/DataSet1b1.xsd" xmlns:mstns="http://tempuri.org/DataSet1b1.xsd" xmlns="http://tempuri.org/DataSet1b1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="postgresConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="postgresConnectionString (Settings)" PropertyReference="ApplicationSettings.Gestiunea_retelei_de_transport_public.Properties.Settings.GlobalReference.Default.postgresConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1b1TableAdapter" GeneratorDataComponentClassName="DataTable1b1TableAdapter" Name="DataTable1b1" UserDataComponentName="DataTable1b1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="postgresConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        idstatie, idtraseu, nrstatie
+FROM            "public".statiiletraseului</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idstatie" DataSetColumn="idstatie" />
+              <Mapping SourceColumn="idtraseu" DataSetColumn="idtraseu" />
+              <Mapping SourceColumn="nrstatie" DataSetColumn="nrstatie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1b1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1b1" msprop:Generator_UserDSName="DataSet1b1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1b1" msprop:Generator_TableClassName="DataTable1b1DataTable" msprop:Generator_TableVarName="tableDataTable1b1" msprop:Generator_TablePropName="DataTable1b1" msprop:Generator_RowDeletingName="DataTable1b1RowDeleting" msprop:Generator_UserTableName="DataTable1b1" msprop:Generator_RowChangingName="DataTable1b1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1b1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1b1RowDeleted" msprop:Generator_RowEvArgName="DataTable1b1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1b1RowChanged" msprop:Generator_RowClassName="DataTable1b1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idstatie" msprop:Generator_ColumnVarNameInTable="columnidstatie" msprop:Generator_ColumnPropNameInRow="idstatie" msprop:Generator_ColumnPropNameInTable="idstatieColumn" msprop:Generator_UserColumnName="idstatie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idtraseu" msprop:Generator_ColumnVarNameInTable="columnidtraseu" msprop:Generator_ColumnPropNameInRow="idtraseu" msprop:Generator_ColumnPropNameInTable="idtraseuColumn" msprop:Generator_UserColumnName="idtraseu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nrstatie" msprop:Generator_ColumnVarNameInTable="columnnrstatie" msprop:Generator_ColumnPropNameInRow="nrstatie" msprop:Generator_ColumnPropNameInTable="nrstatieColumn" msprop:Generator_UserColumnName="nrstatie" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1b1" />
+      <xs:field xpath="mstns:idstatie" />
+      <xs:field xpath="mstns:idtraseu" />
+      <xs:field xpath="mstns:nrstatie" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

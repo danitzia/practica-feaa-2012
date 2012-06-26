@@ -67,7 +67,7 @@ namespace Gestiunea_retelei_de_transport_public
                 {
                     int.Parse(e.FormattedValue.ToString());
                 }
-                catch (System.Exception ex)
+                catch 
                 {
                     e.Cancel = true;
                     System.Windows.Forms.MessageBox.Show("Tipul de data trebuie sa fie numeric!");
@@ -98,7 +98,7 @@ namespace Gestiunea_retelei_de_transport_public
                         int an = int.Parse(split[2]);
                     }
                 }
-                catch (System.Exception ex)
+                catch 
                 {
                     e.Cancel = true;
                     System.Windows.Forms.MessageBox.Show("Tipul de data trebuie sa fie de tip date!");
