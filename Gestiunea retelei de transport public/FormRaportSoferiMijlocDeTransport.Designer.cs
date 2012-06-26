@@ -50,6 +50,7 @@
             // 
             // reportViewer1
             // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.DataTableD1BindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);

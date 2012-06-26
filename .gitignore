@@ -3,6 +3,7 @@ bin
 obj
 *.suo
 Program.cs
+Gestiunea retelei de transport public.csproj
 
 # mstest test results
 TestResults
