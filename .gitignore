@@ -2,8 +2,8 @@
 bin
 obj
 *.suo
-Program.cs
-Gestiunea retelei de transport public.csproj
+Gestiunea retelei de transport public\Program.cs
+Gestiunea retelei de transport public\Gestiunea retelei de transport public.csproj
 
 # mstest test results
 TestResults
