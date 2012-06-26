@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Gestiunea_retelei_de_transport_public
 {
-    public partial class FormRaportAngajati : Form
+    public partial class FormRaportAngajatiSimplu : Form
     {
-        public FormRaportAngajati()
+        public FormRaportAngajatiSimplu()
         {
             InitializeComponent();
         }
