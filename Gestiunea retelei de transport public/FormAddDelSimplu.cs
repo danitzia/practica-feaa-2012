@@ -10,11 +10,11 @@ using System.Data.Odbc;
 
 namespace Gestiunea_retelei_de_transport_public
 {
-    public partial class frmAngajati : Form
+    public partial class FormAddDelSimplu : Form
     {
         private OdbcConnection conexiune;
 
-        public frmAngajati()
+        public  FormAddDelSimplu()
         {
             InitializeComponent();
 

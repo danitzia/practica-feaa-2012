@@ -1,6 +1,6 @@
 ﻿namespace Gestiunea_retelei_de_transport_public
 {
-    partial class frmAngajati
+    partial class FormAddDelSimplu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAngajati));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddDelSimplu));
             this.odbcSelectCommand1 = new System.Data.Odbc.OdbcCommand();
             this.odbcConnection1 = new System.Data.Odbc.OdbcConnection();
             this.odbcDataAdapter1 = new System.Data.Odbc.OdbcDataAdapter();
@@ -195,7 +195,7 @@
             this.grdAngajati.TabIndex = 14;
             this.grdAngajati.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // frmAngajati
+            // FormAddDelSimplu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -215,7 +215,7 @@
             this.Controls.Add(this.txtIdAngDel);
             this.Controls.Add(this.BtnAdauga);
             this.Controls.Add(this.BtnStergere);
-            this.Name = "frmAngajati";
+            this.Name = "FormAddDelSimplu";
             this.Text = "Add/DelAng";
             this.Load += new System.EventHandler(this.frmAngajati_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdAngajati)).EndInit();
