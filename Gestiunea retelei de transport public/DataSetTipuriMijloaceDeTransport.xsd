@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetTipuriMijloaceDeTransport" targetNamespace="http://tempuri.org/DataSetTipuriMijloaceDeTransport.xsd" xmlns:mstns="http://tempuri.org/DataSetTipuriMijloaceDeTransport.xsd" xmlns="http://tempuri.org/DataSetTipuriMijloaceDeTransport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="postgresConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="postgresConnectionString (Settings)" PropertyReference="ApplicationSettings.Gestiunea_retelei_de_transport_public.Properties.Settings.GlobalReference.Default.postgresConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableA1TableAdapter" GeneratorDataComponentClassName="DataTableA1TableAdapter" Name="DataTableA1" UserDataComponentName="DataTableA1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="postgresConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        "public".mijtrans.nrinmat, "public".mijtrans.idtipveh, "public".mijtrans.anfabricatie, "public".vehicule.tipvehicul
+FROM            "public".mijtrans, "public".vehicule
+WHERE        "public".mijtrans.idtipveh = "public".vehicule.idtipveh
+ORDER BY mijtrans.nrinmat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nrinmat" DataSetColumn="nrinmat" />
+              <Mapping SourceColumn="idtipveh" DataSetColumn="idtipveh" />
+              <Mapping SourceColumn="anfabricatie" DataSetColumn="anfabricatie" />
+              <Mapping SourceColumn="tipvehicul" DataSetColumn="tipvehicul" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetTipuriMijloaceDeTransport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetTipuriMijloaceDeTransport" msprop:Generator_UserDSName="DataSetTipuriMijloaceDeTransport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableA1" msprop:Generator_TableClassName="DataTableA1DataTable" msprop:Generator_TableVarName="tableDataTableA1" msprop:Generator_TablePropName="DataTableA1" msprop:Generator_RowDeletingName="DataTableA1RowDeleting" msprop:Generator_UserTableName="DataTableA1" msprop:Generator_RowChangingName="DataTableA1RowChanging" msprop:Generator_RowEvHandlerName="DataTableA1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableA1RowDeleted" msprop:Generator_RowEvArgName="DataTableA1RowChangeEvent" msprop:Generator_RowChangedName="DataTableA1RowChanged" msprop:Generator_RowClassName="DataTableA1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nrinmat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnnrinmat" msprop:Generator_ColumnPropNameInRow="nrinmat" msprop:Generator_ColumnPropNameInTable="nrinmatColumn" msprop:Generator_UserColumnName="nrinmat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idtipveh" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidtipveh" msprop:Generator_ColumnPropNameInRow="idtipveh" msprop:Generator_ColumnPropNameInTable="idtipvehColumn" msprop:Generator_UserColumnName="idtipveh">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="anfabricatie" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnanfabricatie" msprop:Generator_ColumnPropNameInRow="anfabricatie" msprop:Generator_ColumnPropNameInTable="anfabricatieColumn" msprop:Generator_UserColumnName="anfabricatie" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipvehicul" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntipvehicul" msprop:Generator_ColumnPropNameInRow="tipvehicul" msprop:Generator_ColumnPropNameInTable="tipvehiculColumn" msprop:Generator_UserColumnName="tipvehicul" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTableA1" />
+      <xs:field xpath="mstns:nrinmat" />
+      <xs:field xpath="mstns:idtipveh" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
