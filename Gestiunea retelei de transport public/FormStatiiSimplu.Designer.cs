@@ -1,6 +1,6 @@
 ﻿namespace Gestiunea_retelei_de_transport_public
 {
-    partial class FormCategoriiSimplu
+    partial class FormStatiiSimplu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategoriiSimplu));
-            this.dataSetFormCategoriiSimplu = new Gestiunea_retelei_de_transport_public.DataSetFormCategoriiSimplu();
-            this.categoriiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriiTableAdapter = new Gestiunea_retelei_de_transport_public.DataSetFormCategoriiSimpluTableAdapters.categoriiTableAdapter();
-            this.tableAdapterManager = new Gestiunea_retelei_de_transport_public.DataSetFormCategoriiSimpluTableAdapters.TableAdapterManager();
-            this.categoriiBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStatiiSimplu));
+            this.dataSetStatiiSimplu = new Gestiunea_retelei_de_transport_public.DataSetStatiiSimplu();
+            this.statiiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.statiiTableAdapter = new Gestiunea_retelei_de_transport_public.DataSetStatiiSimpluTableAdapters.statiiTableAdapter();
+            this.tableAdapterManager = new Gestiunea_retelei_de_transport_public.DataSetStatiiSimpluTableAdapters.TableAdapterManager();
+            this.statiiBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -46,44 +46,44 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.categoriiBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.categoriiDataGridView = new System.Windows.Forms.DataGridView();
+            this.statiiBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.statiiDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFormCategoriiSimplu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiBindingNavigator)).BeginInit();
-            this.categoriiBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetStatiiSimplu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiBindingNavigator)).BeginInit();
+            this.statiiBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataSetFormCategoriiSimplu
+            // dataSetStatiiSimplu
             // 
-            this.dataSetFormCategoriiSimplu.DataSetName = "DataSetFormCategoriiSimplu";
-            this.dataSetFormCategoriiSimplu.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSetStatiiSimplu.DataSetName = "DataSetStatiiSimplu";
+            this.dataSetStatiiSimplu.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // categoriiBindingSource
+            // statiiBindingSource
             // 
-            this.categoriiBindingSource.DataMember = "categorii";
-            this.categoriiBindingSource.DataSource = this.dataSetFormCategoriiSimplu;
+            this.statiiBindingSource.DataMember = "statii";
+            this.statiiBindingSource.DataSource = this.dataSetStatiiSimplu;
             // 
-            // categoriiTableAdapter
+            // statiiTableAdapter
             // 
-            this.categoriiTableAdapter.ClearBeforeFill = true;
+            this.statiiTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.categoriiTableAdapter = this.categoriiTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Gestiunea_retelei_de_transport_public.DataSetFormCategoriiSimpluTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.statiiTableAdapter = this.statiiTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Gestiunea_retelei_de_transport_public.DataSetStatiiSimpluTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // categoriiBindingNavigator
+            // statiiBindingNavigator
             // 
-            this.categoriiBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.categoriiBindingNavigator.BindingSource = this.categoriiBindingSource;
-            this.categoriiBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.categoriiBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.categoriiBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statiiBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.statiiBindingNavigator.BindingSource = this.statiiBindingSource;
+            this.statiiBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.statiiBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.statiiBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -95,17 +95,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.categoriiBindingNavigatorSaveItem});
-            this.categoriiBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.categoriiBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.categoriiBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.categoriiBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.categoriiBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.categoriiBindingNavigator.Name = "categoriiBindingNavigator";
-            this.categoriiBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.categoriiBindingNavigator.Size = new System.Drawing.Size(396, 25);
-            this.categoriiBindingNavigator.TabIndex = 0;
-            this.categoriiBindingNavigator.Text = "bindingNavigator1";
+            this.statiiBindingNavigatorSaveItem});
+            this.statiiBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.statiiBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.statiiBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.statiiBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.statiiBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.statiiBindingNavigator.Name = "statiiBindingNavigator";
+            this.statiiBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.statiiBindingNavigator.Size = new System.Drawing.Size(397, 25);
+            this.statiiBindingNavigator.TabIndex = 0;
+            this.statiiBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -192,56 +192,56 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // categoriiBindingNavigatorSaveItem
+            // statiiBindingNavigatorSaveItem
             // 
-            this.categoriiBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.categoriiBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("categoriiBindingNavigatorSaveItem.Image")));
-            this.categoriiBindingNavigatorSaveItem.Name = "categoriiBindingNavigatorSaveItem";
-            this.categoriiBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.categoriiBindingNavigatorSaveItem.Text = "Save Data";
-            this.categoriiBindingNavigatorSaveItem.Click += new System.EventHandler(this.categoriiBindingNavigatorSaveItem_Click);
+            this.statiiBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.statiiBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("statiiBindingNavigatorSaveItem.Image")));
+            this.statiiBindingNavigatorSaveItem.Name = "statiiBindingNavigatorSaveItem";
+            this.statiiBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.statiiBindingNavigatorSaveItem.Text = "Save Data";
+            this.statiiBindingNavigatorSaveItem.Click += new System.EventHandler(this.statiiBindingNavigatorSaveItem_Click);
             // 
-            // categoriiDataGridView
+            // statiiDataGridView
             // 
-            this.categoriiDataGridView.AutoGenerateColumns = false;
-            this.categoriiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoriiDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.statiiDataGridView.AutoGenerateColumns = false;
+            this.statiiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.statiiDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.categoriiDataGridView.DataSource = this.categoriiBindingSource;
-            this.categoriiDataGridView.Location = new System.Drawing.Point(0, 38);
-            this.categoriiDataGridView.Name = "categoriiDataGridView";
-            this.categoriiDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.categoriiDataGridView.TabIndex = 1;
+            this.statiiDataGridView.DataSource = this.statiiBindingSource;
+            this.statiiDataGridView.Location = new System.Drawing.Point(0, 43);
+            this.statiiDataGridView.Name = "statiiDataGridView";
+            this.statiiDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.statiiDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "categorie";
-            this.dataGridViewTextBoxColumn1.HeaderText = "categorie";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "idstatie";
+            this.dataGridViewTextBoxColumn1.HeaderText = "idstatie";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "restrictii";
-            this.dataGridViewTextBoxColumn2.HeaderText = "restrictii";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "denstatie";
+            this.dataGridViewTextBoxColumn2.HeaderText = "denstatie";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // FormCategoriiSimplu
+            // FormStatiiSimplu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 317);
-            this.Controls.Add(this.categoriiDataGridView);
-            this.Controls.Add(this.categoriiBindingNavigator);
-            this.Name = "FormCategoriiSimplu";
-            this.Text = "FormCategoriiSimplu";
-            this.Load += new System.EventHandler(this.FormCategoriiSimplu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFormCategoriiSimplu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiBindingNavigator)).EndInit();
-            this.categoriiBindingNavigator.ResumeLayout(false);
-            this.categoriiBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriiDataGridView)).EndInit();
+            this.ClientSize = new System.Drawing.Size(397, 296);
+            this.Controls.Add(this.statiiDataGridView);
+            this.Controls.Add(this.statiiBindingNavigator);
+            this.Name = "FormStatiiSimplu";
+            this.Text = "FormStatiiSimplu";
+            this.Load += new System.EventHandler(this.FormStatiiSimplu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetStatiiSimplu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiBindingNavigator)).EndInit();
+            this.statiiBindingNavigator.ResumeLayout(false);
+            this.statiiBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statiiDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,11 +249,11 @@
 
         #endregion
 
-        private DataSetFormCategoriiSimplu dataSetFormCategoriiSimplu;
-        private System.Windows.Forms.BindingSource categoriiBindingSource;
-        private DataSetFormCategoriiSimpluTableAdapters.categoriiTableAdapter categoriiTableAdapter;
-        private DataSetFormCategoriiSimpluTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator categoriiBindingNavigator;
+        private DataSetStatiiSimplu dataSetStatiiSimplu;
+        private System.Windows.Forms.BindingSource statiiBindingSource;
+        private DataSetStatiiSimpluTableAdapters.statiiTableAdapter statiiTableAdapter;
+        private DataSetStatiiSimpluTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator statiiBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -265,8 +265,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton categoriiBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView categoriiDataGridView;
+        private System.Windows.Forms.ToolStripButton statiiBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView statiiDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }

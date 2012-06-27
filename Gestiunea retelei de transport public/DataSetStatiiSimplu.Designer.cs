@@ -20,17 +20,17 @@ namespace Gestiunea_retelei_de_transport_public {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSetFormCat")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSetStatiiSimplu")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSetFormCat : global::System.Data.DataSet {
+    public partial class DataSetStatiiSimplu : global::System.Data.DataSet {
         
-        private categoriiDataTable tablecategorii;
+        private statiiDataTable tablestatii;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DataSetFormCat() {
+        public DataSetStatiiSimplu() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Gestiunea_retelei_de_transport_public {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DataSetFormCat(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSetStatiiSimplu(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Gestiunea_retelei_de_transport_public {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["categorii"] != null)) {
-                    base.Tables.Add(new categoriiDataTable(ds.Tables["categorii"]));
+                if ((ds.Tables["statii"] != null)) {
+                    base.Tables.Add(new statiiDataTable(ds.Tables["statii"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Gestiunea_retelei_de_transport_public {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public categoriiDataTable categorii {
+        public statiiDataTable statii {
             get {
-                return this.tablecategorii;
+                return this.tablestatii;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Gestiunea_retelei_de_transport_public {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSetFormCat cln = ((DataSetFormCat)(base.Clone()));
+            DataSetStatiiSimplu cln = ((DataSetStatiiSimplu)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Gestiunea_retelei_de_transport_public {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["categorii"] != null)) {
-                    base.Tables.Add(new categoriiDataTable(ds.Tables["categorii"]));
+                if ((ds.Tables["statii"] != null)) {
+                    base.Tables.Add(new statiiDataTable(ds.Tables["statii"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Gestiunea_retelei_de_transport_public {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablecategorii = ((categoriiDataTable)(base.Tables["categorii"]));
+            this.tablestatii = ((statiiDataTable)(base.Tables["statii"]));
             if ((initTable == true)) {
-                if ((this.tablecategorii != null)) {
-                    this.tablecategorii.InitVars();
+                if ((this.tablestatii != null)) {
+                    this.tablestatii.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Gestiunea_retelei_de_transport_public {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSetFormCat";
+            this.DataSetName = "DataSetStatiiSimplu";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSetFormCat.xsd";
+            this.Namespace = "http://tempuri.org/DataSetStatiiSimplu.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablecategorii = new categoriiDataTable();
-            base.Tables.Add(this.tablecategorii);
+            this.tablestatii = new statiiDataTable();
+            base.Tables.Add(this.tablestatii);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializecategorii() {
+        private bool ShouldSerializestatii() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Gestiunea_retelei_de_transport_public {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSetFormCat ds = new DataSetFormCat();
+            DataSetStatiiSimplu ds = new DataSetStatiiSimplu();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,23 @@ namespace Gestiunea_retelei_de_transport_public {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void categoriiRowChangeEventHandler(object sender, categoriiRowChangeEvent e);
+        public delegate void statiiRowChangeEventHandler(object sender, statiiRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class categoriiDataTable : global::System.Data.TypedTableBase<categoriiRow> {
+        public partial class statiiDataTable : global::System.Data.TypedTableBase<statiiRow> {
             
-            private global::System.Data.DataColumn columncategorie;
+            private global::System.Data.DataColumn columnidstatie;
             
-            private global::System.Data.DataColumn columnrestrictii;
+            private global::System.Data.DataColumn columndenstatie;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiDataTable() {
-                this.TableName = "categorii";
+            public statiiDataTable() {
+                this.TableName = "statii";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +294,7 @@ namespace Gestiunea_retelei_de_transport_public {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal categoriiDataTable(global::System.Data.DataTable table) {
+            internal statiiDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +311,24 @@ namespace Gestiunea_retelei_de_transport_public {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected categoriiDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected statiiDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn categorieColumn {
+            public global::System.Data.DataColumn idstatieColumn {
                 get {
-                    return this.columncategorie;
+                    return this.columnidstatie;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn restrictiiColumn {
+            public global::System.Data.DataColumn denstatieColumn {
                 get {
-                    return this.columnrestrictii;
+                    return this.columndenstatie;
                 }
             }
             
@@ -343,53 +343,53 @@ namespace Gestiunea_retelei_de_transport_public {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRow this[int index] {
+            public statiiRow this[int index] {
                 get {
-                    return ((categoriiRow)(this.Rows[index]));
+                    return ((statiiRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event categoriiRowChangeEventHandler categoriiRowChanging;
+            public event statiiRowChangeEventHandler statiiRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event categoriiRowChangeEventHandler categoriiRowChanged;
+            public event statiiRowChangeEventHandler statiiRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event categoriiRowChangeEventHandler categoriiRowDeleting;
+            public event statiiRowChangeEventHandler statiiRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event categoriiRowChangeEventHandler categoriiRowDeleted;
+            public event statiiRowChangeEventHandler statiiRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddcategoriiRow(categoriiRow row) {
+            public void AddstatiiRow(statiiRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRow AddcategoriiRow(string categorie, string restrictii) {
-                categoriiRow rowcategoriiRow = ((categoriiRow)(this.NewRow()));
+            public statiiRow AddstatiiRow(string idstatie, string denstatie) {
+                statiiRow rowstatiiRow = ((statiiRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        categorie,
-                        restrictii};
-                rowcategoriiRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowcategoriiRow);
-                return rowcategoriiRow;
+                        idstatie,
+                        denstatie};
+                rowstatiiRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowstatiiRow);
+                return rowstatiiRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRow FindBycategorie(string categorie) {
-                return ((categoriiRow)(this.Rows.Find(new object[] {
-                            categorie})));
+            public statiiRow FindByidstatie(string idstatie) {
+                return ((statiiRow)(this.Rows.Find(new object[] {
+                            idstatie})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                categoriiDataTable cln = ((categoriiDataTable)(base.Clone()));
+                statiiDataTable cln = ((statiiDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +397,55 @@ namespace Gestiunea_retelei_de_transport_public {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new categoriiDataTable();
+                return new statiiDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columncategorie = base.Columns["categorie"];
-                this.columnrestrictii = base.Columns["restrictii"];
+                this.columnidstatie = base.Columns["idstatie"];
+                this.columndenstatie = base.Columns["denstatie"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columncategorie = new global::System.Data.DataColumn("categorie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncategorie);
-                this.columnrestrictii = new global::System.Data.DataColumn("restrictii", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnrestrictii);
+                this.columnidstatie = new global::System.Data.DataColumn("idstatie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidstatie);
+                this.columndenstatie = new global::System.Data.DataColumn("denstatie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndenstatie);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncategorie}, true));
-                this.columncategorie.AllowDBNull = false;
-                this.columncategorie.Unique = true;
-                this.columncategorie.MaxLength = 6;
-                this.columnrestrictii.MaxLength = 100;
+                                this.columnidstatie}, true));
+                this.columnidstatie.AllowDBNull = false;
+                this.columnidstatie.Unique = true;
+                this.columnidstatie.MaxLength = 10;
+                this.columndenstatie.MaxLength = 70;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRow NewcategoriiRow() {
-                return ((categoriiRow)(this.NewRow()));
+            public statiiRow NewstatiiRow() {
+                return ((statiiRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new categoriiRow(builder);
+                return new statiiRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(categoriiRow);
+                return typeof(statiiRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.categoriiRowChanged != null)) {
-                    this.categoriiRowChanged(this, new categoriiRowChangeEvent(((categoriiRow)(e.Row)), e.Action));
+                if ((this.statiiRowChanged != null)) {
+                    this.statiiRowChanged(this, new statiiRowChangeEvent(((statiiRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +453,8 @@ namespace Gestiunea_retelei_de_transport_public {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.categoriiRowChanging != null)) {
-                    this.categoriiRowChanging(this, new categoriiRowChangeEvent(((categoriiRow)(e.Row)), e.Action));
+                if ((this.statiiRowChanging != null)) {
+                    this.statiiRowChanging(this, new statiiRowChangeEvent(((statiiRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +462,8 @@ namespace Gestiunea_retelei_de_transport_public {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.categoriiRowDeleted != null)) {
-                    this.categoriiRowDeleted(this, new categoriiRowChangeEvent(((categoriiRow)(e.Row)), e.Action));
+                if ((this.statiiRowDeleted != null)) {
+                    this.statiiRowDeleted(this, new statiiRowChangeEvent(((statiiRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +471,14 @@ namespace Gestiunea_retelei_de_transport_public {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.categoriiRowDeleting != null)) {
-                    this.categoriiRowDeleting(this, new categoriiRowChangeEvent(((categoriiRow)(e.Row)), e.Action));
+                if ((this.statiiRowDeleting != null)) {
+                    this.statiiRowDeleting(this, new statiiRowChangeEvent(((statiiRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemovecategoriiRow(categoriiRow row) {
+            public void RemovestatiiRow(statiiRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +487,7 @@ namespace Gestiunea_retelei_de_transport_public {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSetFormCat ds = new DataSetFormCat();
+                DataSetStatiiSimplu ds = new DataSetStatiiSimplu();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +505,7 @@ namespace Gestiunea_retelei_de_transport_public {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "categoriiDataTable";
+                attribute2.FixedValue = "statiiDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,54 +549,54 @@ namespace Gestiunea_retelei_de_transport_public {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class categoriiRow : global::System.Data.DataRow {
+        public partial class statiiRow : global::System.Data.DataRow {
             
-            private categoriiDataTable tablecategorii;
+            private statiiDataTable tablestatii;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal categoriiRow(global::System.Data.DataRowBuilder rb) : 
+            internal statiiRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablecategorii = ((categoriiDataTable)(this.Table));
+                this.tablestatii = ((statiiDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string categorie {
+            public string idstatie {
                 get {
-                    return ((string)(this[this.tablecategorii.categorieColumn]));
+                    return ((string)(this[this.tablestatii.idstatieColumn]));
                 }
                 set {
-                    this[this.tablecategorii.categorieColumn] = value;
+                    this[this.tablestatii.idstatieColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string restrictii {
+            public string denstatie {
                 get {
                     try {
-                        return ((string)(this[this.tablecategorii.restrictiiColumn]));
+                        return ((string)(this[this.tablestatii.denstatieColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'restrictii\' in table \'categorii\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'denstatie\' in table \'statii\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecategorii.restrictiiColumn] = value;
+                    this[this.tablestatii.denstatieColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsrestrictiiNull() {
-                return this.IsNull(this.tablecategorii.restrictiiColumn);
+            public bool IsdenstatieNull() {
+                return this.IsNull(this.tablestatii.denstatieColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetrestrictiiNull() {
-                this[this.tablecategorii.restrictiiColumn] = global::System.Convert.DBNull;
+            public void SetdenstatieNull() {
+                this[this.tablestatii.denstatieColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -604,22 +604,22 @@ namespace Gestiunea_retelei_de_transport_public {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class categoriiRowChangeEvent : global::System.EventArgs {
+        public class statiiRowChangeEvent : global::System.EventArgs {
             
-            private categoriiRow eventRow;
+            private statiiRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRowChangeEvent(categoriiRow row, global::System.Data.DataRowAction action) {
+            public statiiRowChangeEvent(statiiRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public categoriiRow Row {
+            public statiiRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -635,7 +635,7 @@ namespace Gestiunea_retelei_de_transport_public {
         }
     }
 }
-namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
+namespace Gestiunea_retelei_de_transport_public.DataSetStatiiSimpluTableAdapters {
     
     
     /// <summary>
@@ -647,7 +647,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class categoriiTableAdapter : global::System.ComponentModel.Component {
+    public partial class statiiTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.Odbc.OdbcDataAdapter _adapter;
         
@@ -661,7 +661,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public categoriiTableAdapter() {
+        public statiiTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -758,36 +758,34 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
             this._adapter = new global::System.Data.Odbc.OdbcDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "categorii";
-            tableMapping.ColumnMappings.Add("categorie", "categorie");
-            tableMapping.ColumnMappings.Add("restrictii", "restrictii");
+            tableMapping.DataSetTable = "statii";
+            tableMapping.ColumnMappings.Add("idstatie", "idstatie");
+            tableMapping.ColumnMappings.Add("denstatie", "denstatie");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"postgres\".\"public\".\"categorii\" WHERE ((\"categorie\" = ?) AND ((? = 1 " +
-                "AND \"restrictii\" IS NULL) OR (\"restrictii\" = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"postgres\".\"public\".\"statii\" WHERE ((\"idstatie\" = ?) AND ((? = 1 AND " +
+                "\"denstatie\" IS NULL) OR (\"denstatie\" = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_categorie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "categorie", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_restrictii", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_restrictii", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_idstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "idstatie", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_denstatie", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_denstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO \"postgres\".\"public\".\"categorii\" (\"categorie\", \"restrictii\") VALUES (?" +
-                ", ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO \"postgres\".\"public\".\"statii\" (\"idstatie\", \"denstatie\") VALUES (?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("categorie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "categorie", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("restrictii", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("idstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "idstatie", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("denstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE \"postgres\".\"public\".\"categorii\" SET \"categorie\" = ?, \"restrictii\" = ? WHER" +
-                "E ((\"categorie\" = ?) AND ((? = 1 AND \"restrictii\" IS NULL) OR (\"restrictii\" = ?)" +
-                "))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE \"postgres\".\"public\".\"statii\" SET \"idstatie\" = ?, \"denstatie\" = ? WHERE ((\"" +
+                "idstatie\" = ?) AND ((? = 1 AND \"denstatie\" IS NULL) OR (\"denstatie\" = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("categorie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "categorie", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("restrictii", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_categorie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "categorie", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_restrictii", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_restrictii", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "restrictii", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("idstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "idstatie", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("denstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_idstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "idstatie", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_denstatie", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_denstatie", global::System.Data.Odbc.OdbcType.Char, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "denstatie", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -803,7 +801,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT \"categorie\", \"restrictii\" FROM \"public\".\"categorii\"";
+            this._commandCollection[0].CommandText = "SELECT \"idstatie\", \"denstatie\" FROM \"public\".\"statii\"";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -811,7 +809,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSetFormCat.categoriiDataTable dataTable) {
+        public virtual int Fill(DataSetStatiiSimplu.statiiDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -824,9 +822,9 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSetFormCat.categoriiDataTable GetData() {
+        public virtual DataSetStatiiSimplu.statiiDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSetFormCat.categoriiDataTable dataTable = new DataSetFormCat.categoriiDataTable();
+            DataSetStatiiSimplu.statiiDataTable dataTable = new DataSetStatiiSimplu.statiiDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -834,15 +832,15 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSetFormCat.categoriiDataTable dataTable) {
+        public virtual int Update(DataSetStatiiSimplu.statiiDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSetFormCat dataSet) {
-            return this.Adapter.Update(dataSet, "categorii");
+        public virtual int Update(DataSetStatiiSimplu dataSet) {
+            return this.Adapter.Update(dataSet, "statii");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -864,19 +862,19 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_categorie, string Original_restrictii) {
-            if ((Original_categorie == null)) {
-                throw new global::System.ArgumentNullException("Original_categorie");
+        public virtual int Delete(string Original_idstatie, string Original_denstatie) {
+            if ((Original_idstatie == null)) {
+                throw new global::System.ArgumentNullException("Original_idstatie");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_categorie));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_idstatie));
             }
-            if ((Original_restrictii == null)) {
-                throw new global::System.ArgumentNullException("Original_restrictii");
+            if ((Original_denstatie == null)) {
+                throw new global::System.ArgumentNullException("Original_denstatie");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_restrictii));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_denstatie));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -898,18 +896,18 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string categorie, string restrictii) {
-            if ((categorie == null)) {
-                throw new global::System.ArgumentNullException("categorie");
+        public virtual int Insert(string idstatie, string denstatie) {
+            if ((idstatie == null)) {
+                throw new global::System.ArgumentNullException("idstatie");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(categorie));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(idstatie));
             }
-            if ((restrictii == null)) {
-                throw new global::System.ArgumentNullException("restrictii");
+            if ((denstatie == null)) {
+                throw new global::System.ArgumentNullException("denstatie");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(restrictii));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(denstatie));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -931,31 +929,31 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string categorie, string restrictii, string Original_categorie, string Original_restrictii) {
-            if ((categorie == null)) {
-                throw new global::System.ArgumentNullException("categorie");
+        public virtual int Update(string idstatie, string denstatie, string Original_idstatie, string Original_denstatie) {
+            if ((idstatie == null)) {
+                throw new global::System.ArgumentNullException("idstatie");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(categorie));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(idstatie));
             }
-            if ((restrictii == null)) {
-                throw new global::System.ArgumentNullException("restrictii");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(restrictii));
-            }
-            if ((Original_categorie == null)) {
-                throw new global::System.ArgumentNullException("Original_categorie");
+            if ((denstatie == null)) {
+                throw new global::System.ArgumentNullException("denstatie");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_categorie));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(denstatie));
             }
-            if ((Original_restrictii == null)) {
-                throw new global::System.ArgumentNullException("Original_restrictii");
+            if ((Original_idstatie == null)) {
+                throw new global::System.ArgumentNullException("Original_idstatie");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_idstatie));
+            }
+            if ((Original_denstatie == null)) {
+                throw new global::System.ArgumentNullException("Original_denstatie");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_restrictii));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_denstatie));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -977,8 +975,8 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string restrictii, string Original_categorie, string Original_restrictii) {
-            return this.Update(Original_categorie, restrictii, Original_categorie, Original_restrictii);
+        public virtual int Update(string denstatie, string Original_idstatie, string Original_denstatie) {
+            return this.Update(Original_idstatie, denstatie, Original_idstatie, Original_denstatie);
         }
     }
     
@@ -994,7 +992,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private categoriiTableAdapter _categoriiTableAdapter;
+        private statiiTableAdapter _statiiTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1016,12 +1014,12 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public categoriiTableAdapter categoriiTableAdapter {
+        public statiiTableAdapter statiiTableAdapter {
             get {
-                return this._categoriiTableAdapter;
+                return this._statiiTableAdapter;
             }
             set {
-                this._categoriiTableAdapter = value;
+                this._statiiTableAdapter = value;
             }
         }
         
@@ -1044,9 +1042,9 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._categoriiTableAdapter != null) 
-                            && (this._categoriiTableAdapter.Connection != null))) {
-                    return this._categoriiTableAdapter.Connection;
+                if (((this._statiiTableAdapter != null) 
+                            && (this._statiiTableAdapter.Connection != null))) {
+                    return this._statiiTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1061,7 +1059,7 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._categoriiTableAdapter != null)) {
+                if ((this._statiiTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1073,14 +1071,14 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DataSetFormCat dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSetStatiiSimplu dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._categoriiTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.categorii.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._statiiTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.statii.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._categoriiTableAdapter.Update(updatedRows));
+                    result = (result + this._statiiTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1092,13 +1090,13 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DataSetFormCat dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSetStatiiSimplu dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._categoriiTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.categorii.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._statiiTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.statii.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._categoriiTableAdapter.Update(addedRows));
+                    result = (result + this._statiiTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1110,13 +1108,13 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DataSetFormCat dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSetStatiiSimplu dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._categoriiTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.categorii.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._statiiTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.statii.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._categoriiTableAdapter.Update(deletedRows));
+                    result = (result + this._statiiTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1152,15 +1150,15 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DataSetFormCat dataSet) {
+        public virtual int UpdateAll(DataSetStatiiSimplu dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._categoriiTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._categoriiTableAdapter.Connection) == false))) {
+            if (((this._statiiTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._statiiTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1196,13 +1194,13 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._categoriiTableAdapter != null)) {
-                    revertConnections.Add(this._categoriiTableAdapter, this._categoriiTableAdapter.Connection);
-                    this._categoriiTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
-                    this._categoriiTableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
-                    if (this._categoriiTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._categoriiTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._categoriiTableAdapter.Adapter);
+                if ((this._statiiTableAdapter != null)) {
+                    revertConnections.Add(this._statiiTableAdapter, this._statiiTableAdapter.Connection);
+                    this._statiiTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
+                    this._statiiTableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
+                    if (this._statiiTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._statiiTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._statiiTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1263,9 +1261,9 @@ namespace Gestiunea_retelei_de_transport_public.DataSetFormCatTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._categoriiTableAdapter != null)) {
-                    this._categoriiTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._categoriiTableAdapter]));
-                    this._categoriiTableAdapter.Transaction = null;
+                if ((this._statiiTableAdapter != null)) {
+                    this._statiiTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._statiiTableAdapter]));
+                    this._statiiTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
